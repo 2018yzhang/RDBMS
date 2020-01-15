@@ -1,0 +1,1 @@
+select App from googleplaystore_user_reviews group by App having Count(review) = 1;

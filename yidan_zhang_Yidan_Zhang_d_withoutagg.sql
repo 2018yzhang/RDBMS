@@ -1,0 +1,1 @@
+select App from googleplaystore_user_reviews t1 where not exists (select App from googleplaystore_user_reviews t2 where t1.App = t2.App and t1.Review !=t2.Review);

@@ -1,0 +1,1 @@
+select Category, Avg(Price) from googleplaystore group by Category order by Avg(Price) DESC limit 10;

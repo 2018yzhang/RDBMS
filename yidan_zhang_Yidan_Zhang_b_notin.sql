@@ -1,0 +1,1 @@
+select Count(App) from googleplaystore where App not in (select Distinct App from googleplaystore_user_reviews);

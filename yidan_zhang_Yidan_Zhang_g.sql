@@ -1,0 +1,1 @@
+select count(*) from(select distinct App from googleplaystore natural join googleplaystore_user_reviews where Type = 'Free' and Sentiment = 'Positive' group by App having Count(Sentiment)>9) as t1;

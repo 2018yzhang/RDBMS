@@ -1,0 +1,1 @@
+select Count(App) from googleplaystore_user_reviews where Sentiment = 'Positive' and App in (select App from googleplaystore_user_reviews where Sentiment = 'Negative');

@@ -1,0 +1,1 @@
+select App from googleplaystore_user_reviews group by App having count(distinct Review);

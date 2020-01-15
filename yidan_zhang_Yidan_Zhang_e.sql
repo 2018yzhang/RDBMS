@@ -1,0 +1,1 @@
+select App, Price from googleplaystore where Price >= all (select Price from googleplaystore);
